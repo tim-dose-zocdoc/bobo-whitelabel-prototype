@@ -1,0 +1,18 @@
+.book-online-view-profile-buttons,
+.-white-label-header-link,
+.-white-label-header-logo,
+.link-duo-item {
+	visibility: hidden;
+}
+
+.-white-label-header-logo {
+	height: 40px;
+}
+
+.-rating {
+    background-image: url(images/stars.png);
+}
+
+.profilePhoto a {
+	cursor: default;
+}
