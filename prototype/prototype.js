@@ -11,6 +11,7 @@ $(window).bind("load", function() {
     $('.profilePhoto a, .docName a').attr('href','');
     $('.profilePhoto a, .docName a').off('click');
     $('.profilePhoto a, .docName a').on('click', function() { return false; });
+    
 }
 
 // $('body').css({background:'red'})
