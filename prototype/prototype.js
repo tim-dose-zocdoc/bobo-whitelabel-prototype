@@ -13,7 +13,17 @@ $(window).on("load", function() {
     $('.profilePhoto a, .docName a').off('click');
     $('.profilePhoto a, .docName a').on('click', function() { return false; });
     
+    ;
+
 	console.log('post-load prototype js executed')
+});
+
+$.ajax({
+	url: 'prototype/data/insurances-short.html', 
+	success: function(data) {
+			$('.grouped-select-insurance').replaceWith(data)
+			console.log('prototype insurance data loaded');
+		}
 });
 
 console.log('prototype js load complete')
