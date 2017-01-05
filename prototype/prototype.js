@@ -1,6 +1,7 @@
-var google = {}
+// var google = {}
+console.log('loading prototype js')
 
-$(window).bind("load", function() {
+$(window).on("load", function() {
 	var url = 'http://endless.horse'
     $('a.appointment-time').attr('href',url)
 
@@ -12,6 +13,7 @@ $(window).bind("load", function() {
     $('.profilePhoto a, .docName a').off('click');
     $('.profilePhoto a, .docName a').on('click', function() { return false; });
     
-}
+	console.log('post-load prototype js executed')
+});
 
-// $('body').css({background:'red'})
+console.log('prototype js load complete')
