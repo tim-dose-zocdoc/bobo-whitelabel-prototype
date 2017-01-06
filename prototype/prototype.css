@@ -6,7 +6,8 @@
 	visibility: hidden;
 }
 
-.doctor-rating-comment {
+.doctor-rating-comment,
+.docLocationName {
 	display: none;
 }
 

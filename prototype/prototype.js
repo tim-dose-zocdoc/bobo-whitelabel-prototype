@@ -12,11 +12,13 @@ $(window).on("load", function() {
     $('.profilePhoto a, .docName a').attr('href','');
     $('.profilePhoto a, .docName a').off('click');
     $('.profilePhoto a, .docName a').on('click', function() { return false; });
-    
-    $('.mapWrapper').replaceWith('<img src="prototype/images/map.png">');
 
 	console.log('post-load prototype js executed')
 });
+
+
+$('.mapWrapper').replaceWith('<img src="prototype/images/map.png">');
+
 
 $.ajax({
 	url: 'prototype/data/insurances-short.html', 
