@@ -13,12 +13,14 @@ $(window).on("load", function() {
     $('.profilePhoto a, .docName a').off('click');
     $('.profilePhoto a, .docName a').on('click', function() { return false; });
 
+    console.log('prototype replacing map with image')
+    $mapImage = $('<img class="prototype-map" src="prototype/images/map.png">').css({'margin-top':'37px',})
+    $('.js-map-over-container').replaceWith($mapImage);
+
 	console.log('post-load prototype js executed')
 });
 
-console.log('prototype replacing map with image')
-$mapImage = $('<img class="prototype-map" src="prototype/images/map.png">').css({'margin-top','37px'})
-$('.js-map-over-container').replaceWith($mapImage);
+
 
 
 $.ajax({
