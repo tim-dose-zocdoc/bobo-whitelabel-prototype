@@ -2,7 +2,7 @@
 console.log('loading prototype js')
 
 $(window).on("load", function() {
-	var url = 'http://endless.horse'
+	var url = 'http://m9jewt.axshare.com/book.html'
     $('a.appointment-time').attr('href',url)
 
     $('.book-online-view-profile-buttons').hide();
