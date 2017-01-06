@@ -16,8 +16,9 @@ $(window).on("load", function() {
 	console.log('post-load prototype js executed')
 });
 
-
-$('.mapWrapper').replaceWith('<img src="prototype/images/map.png">');
+console.log('prototype replacing map with image')
+$mapImage = $('<img class="prototype-map" src="prototype/images/map.png">').css({'margin-top','37px'})
+$('.js-map-over-container').replaceWith($mapImage);
 
 
 $.ajax({
