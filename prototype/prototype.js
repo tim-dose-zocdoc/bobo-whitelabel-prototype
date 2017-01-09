@@ -17,7 +17,7 @@ $(window).on("load", function() {
     $mapImage = $('<img class="prototype-map" src="prototype/images/map.png">').css({'margin-top':'37px',})
     $('.js-map-over-container').replaceWith($mapImage);
 
-    $('#ui-gs-specialty a.ui-gs-toggle').first().text('Cardiologist (Heart Doctor)')
+    $('#ui-gs-specialty a.ui-gs-toggle').text('Cardiologist (Heart Doctor)')
 
 	console.log('post-load prototype js executed')
 });
